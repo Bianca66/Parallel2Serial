@@ -25,14 +25,14 @@ package ex_in_pkg;
 	`include "uvm_macros.svh"
 	import uvm_pkg::*;
 
-	//`include "ex_in_cmd.svh"
-	//`include "ex_in_monitor.svh"
+	`include "ex_in_cmd.svh"
+	`include "ex_in_monitor.svh"
 
-	//`include "ex_in_sequencer.svh"
-	//`include "ex_in_sequence.svh"
-	//`include "ex_in_driver.svh"
+	`include "ex_in_sequencer.svh"
+	`include "ex_in_sequence.svh"
+	`include "ex_in_driver.svh"
 
-	//`include "ex_in_agent.svh"
+	`include "ex_in_agent.svh"
 
 
 endpackage : ex_in_pkg
