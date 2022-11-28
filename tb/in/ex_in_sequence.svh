@@ -35,27 +35,17 @@ class ex_in_sequence extends uvm_sequence#(ex_in_cmd);
 	endfunction : new
 
 	virtual task body();
-//      trans1 = ex_in_cmd::type_id::create(
-//          .name("trans1"),
-//          .contxt(get_full_name())  );
-//      assert(trans1.randomize());
-//      start_item(trans1);
-//      finish_item(trans1);
+        trans1 = ex_in_cmd::type_id::create(
+            .name("trans1"),
+            .contxt(get_full_name())  );
+        assert(trans1.randomize());
+        start_item(trans1);
+        finish_item(trans1);
 		repeat(nof_items)
 			`uvm_do(trans)
 	endtask : body
 
 endclass : ex_in_sequence
-
-
-
-
-
-
-
-
-
-
 
 `endif
 
