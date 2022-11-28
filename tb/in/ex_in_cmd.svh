@@ -21,9 +21,6 @@
 //define class here
 
 
-
-
-/*
 	`uvm_object_utils_begin(ex_in_cmd)
 			`uvm_field_int(idle_time, UVM_DEFAULT)
 			`uvm_field_int(address, UVM_DEFAULT)
@@ -77,13 +74,6 @@
 	function bit[3:0] compute_crc();
 		return compute_crc_w_initial(4'hF);
 	endfunction : compute_crc
-
-
-*/
-
-
-
-
 
 `endif
 
