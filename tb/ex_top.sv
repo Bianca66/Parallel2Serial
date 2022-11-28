@@ -24,8 +24,8 @@ module ex_top(); //tb_top
 
 
 	initial begin
-		//uvm_config_db#(virtual ex_in_intf)::set(.cntxt(null),.inst_name("uvm_test_top.env.in_agent*"),.field_name("in_vif"),.value(in_intf));
-		//uvm_config_db#(virtual ex_out_intf)::set(.cntxt(null),.inst_name("uvm_test_top.env.out_agent*"),.field_name("out_vif"),.value(out_intf));
+		uvm_config_db#(virtual ex_in_intf)::set(.cntxt(null),.inst_name("uvm_test_top.env.in_agent*"),.field_name("in_vif"),.value(in_intf));
+		uvm_config_db#(virtual ex_out_intf)::set(.cntxt(null),.inst_name("uvm_test_top.env.out_agent*"),.field_name("out_vif"),.value(out_intf));
 		run_test();
 	end
 
